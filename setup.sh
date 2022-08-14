@@ -19,7 +19,7 @@ displaySeed='false'
 fastSync='false'
 domain=''
 email=''
-tag=''
+tag=$(curl -s https://api.github.com/repos/nanocurrency/nano-node/releases/latest -s | jq .name -r)
 while getopts 'sqfd:e:t:' flag; do
   case "${flag}" in
     s) displaySeed='true' ;;
@@ -27,7 +27,7 @@ while getopts 'sqfd:e:t:' flag; do
     e) email="${OPTARG}" ;;
     q) quiet='true' ;;
     f) fastSync='true' ;;
-    t) tag="${OPTARG}" ;;
+    # t) tag="${OPTARG}" ;;
     *) exit 1 ;;
   esac
 done
