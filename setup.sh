@@ -4,7 +4,7 @@
 version='v4.4'
 
 # FAST-SYNC DOWNLOAD LINK
-ledgerDownloadLink='https://mynano.ninja/api/ledger/download'
+ledgerDownloadLink=$(curl -s 'https://s3.us-east-2.amazonaws.com/repo.nano.org/snapshots/latest')
 
 # OUTPUT VARS
 red=`tput setaf 1`
