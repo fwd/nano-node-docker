@@ -4,6 +4,15 @@
     <img src="nano-node-docker.png" alt="Logo" width='180px' height='auto'/>
 </div>
 
+---
+
+```
+$ cd ~ && git clone https://github.com/nano2dev/nano-node-docker.git && cd ~/nano-node-docker
+$ sudo ./setup.sh -s -t V23.1
+```
+
+---
+
 ## **Description**
 
 **Install a NANO node on your server with a vast variety of tools in a couple on minutes!** 💫
@@ -62,11 +71,6 @@ Optionally, if a domain name is available for your host, NANO Node Docker can al
 ## **Quick Start**
 
 Download or clone the latest release, open a bash terminal and fire up the installation script:
-
-```
-$ cd ~ && git clone https://github.com/lephleg/nano-node-docker.git && cd ~/nano-node-docker
-$ sudo ./setup.sh -s -t V23.1
-```
 
 **That's it!** You can now navigate to your host IP to check your Nano Node Monitor dashboard. **Do not forget to write down** your wallet seed as it appears in the output of the installer.
 
